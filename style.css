@@ -1,0 +1,68 @@
+
+:root {
+  --blue: #0096FF;
+  --yellow: #FFFF00;
+  --dark: #0b0f1a;
+  --light: #f5f7fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #0b0f1a, #11182a);
+  color: var(--light);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--blue);
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.9;
+  opacity: 0.9;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(10,15,30,0.85);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  text-align: center;
+}
+
+.nav a {
+  color: var(--light);
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.nav a:hover {
+  color: var(--yellow);
+}
+
+.fade {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
